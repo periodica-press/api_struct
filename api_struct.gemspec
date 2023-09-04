@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'api_struct/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'per-api_struct'
+  spec.name          = 'per_api_struct'
   spec.version       = ApiStruct::VERSION
   spec.authors       = %w[bezrukavyi andy1341 kirillshevch]
   spec.email         = ['yaroslav.bezrukavyi@gmail.com', 'andrii.novikov1341@gmail.com', 'kirills167@gmail.com']
