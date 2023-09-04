@@ -1,32 +1,18 @@
-# <img src='https://github.com/uploadcare/uploadcare-api_struct/blob/master/api_struct.svg' height='60' alt='ApiStruct' />
-
 **ApiStruct** consists of two main interfaces: `ApiStruct::Client` and `ApiStruct::Entity`. The `ApiStruct::Client` class is aimed at using the same interface for describing requests to different APIs. The `ApiStruct::Entity` enables you to use *ApiStruct* clients in ORM-like style.
 
-[![Gem Version](https://badge.fury.io/rb/uploadcare-api_struct.svg)](https://badge.fury.io/rb/uploadcare-api_struct)
-![Maintainability](https://api.codeclimate.com/v1/badges/dc07c83ccbcaaebc6c44/maintainability)
-[![Build Status][actions-img]][actions-badge]
-[![Coverage Status][coverals-img]][coverals]
-
-[actions-badge]: https://github.com/uploadcare/uploadcare-api_struct/actions/workflows/test.yml
-[actions-img]: https://github.com/uploadcare/uploadcare-api_struct/actions/workflows/test.yml/badge.svg
-[coverals-img]: https://coveralls.io/repos/github/uploadcare/uploadcare-api_struct/badge.svg?branch=master
-[coverals]: https://coveralls.io/github/uploadcare/uploadcare-api_struct?branch=master
+Originally from: https://github.com/rubygarage/api_struct
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'uploadcare-api_struct'
+gem 'per_api_struct', git: 'https://github.com/periodica-press/per_api_struct.git'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install uploadcare-api_struct
 
 ## Usage
 
@@ -203,15 +189,3 @@ class PostClient < ApiStruct::Client
   end
 end
 ```
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/uploadcare/uploadcare-api_struct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-***
-<a href="https://rubygarage.org/"><img src="https://rubygarage.s3.amazonaws.com/assets/assets/rg_color_logo_horizontal-919afc51a81d2e40cb6a0b43ee832e3fcd49669d06785156d2d16fd0d799f89e.png" alt="RubyGarage Logo" width="415" height="128"></a>
-
-RubyGarage is a leading software development and consulting company in Eastern Europe. Our main expertise includes Ruby and Ruby on Rails, but we successfully employ other technologies to deliver the best results to our clients. [Check out our portfolio](https://rubygarage.org/portfolio) for even more exciting works!
