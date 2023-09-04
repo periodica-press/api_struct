@@ -13,10 +13,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/periodica-press/per_api_struct.git'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.bindir        = 'exe'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ['lib']
+  spec.require_path = 'lib'
+  spec.files = Dir['lib/**/*']
 
   spec.add_dependency 'dry-monads', '~> 1.6'
   spec.add_dependency 'dry-configurable', '~> 1.0'
